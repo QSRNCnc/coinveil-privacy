@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Coinveil Privacy Policy</title>
+<style>
+  :root { --bg:#1C1C1C; --surface:#262626; --ink:#F2EDE4; --muted:#A39E96; --accent:#F5A524; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    background:var(--bg); color:var(--ink); line-height:1.55; }
+  .hero { padding:40px 22px 28px; background:linear-gradient(160deg, #33302C 0%, #1C1C1C 55%, #141414 100%);
+    border-bottom:4px solid var(--accent); }
+  .brand { letter-spacing:0.18em; color:var(--accent); font-size:13px; font-weight:700; }
+  h1 { font-size:32px; margin:14px 0 8px; color:var(--accent); }
+  .lede { color:var(--muted); max-width:40rem; margin:0; }
+  main { padding:28px 22px 72px; max-width:720px; margin:0 auto; }
+  h2 { font-size:15px; margin:28px 0 8px; color:#E8E2D6; text-transform:uppercase; letter-spacing:0.06em; }
+  p, li { font-size:15px; color:var(--muted); }
+  strong { color:var(--ink); }
+  .meta { color:var(--muted); font-size:13px; }
+  .stamp { display:inline-block; background:var(--accent); color:#1C1C1C; font-size:11px; font-weight:700;
+    padding:4px 8px; margin-bottom:12px; }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="stamp">ON-DEVICE ONLY</div>
+    <div class="brand">COINVEIL</div>
+    <h1>Privacy Policy</h1>
+    <p class="lede">Local-life expense ledger. Encrypted on your iPhone. No account, no cloud upload.</p>
+  </header>
+  <main>
+    <p class="meta">Effective date: November 7, 2026 · Last updated: November 7, 2026</p>
+
+    <h2>Summary</h2>
+    <p><strong>Coinveil</strong> is a personal expense log that works entirely on your iPhone. Expense entries, weekly and monthly charts, field notes, and preferences do not require a network connection or an account. Coinveil is not a bank and does not move money.</p>
+
+    <h2>Data stored on your device</h2>
+    <ul>
+      <li>Expense entries (amount, category, merchant, note, timestamps) sealed with AES-GCM</li>
+      <li>A local encryption key held in the iOS Keychain (This Device Only)</li>
+      <li>Preferences (haptics, confirm-before-delete, currency display code)</li>
+      <li>Starred field-note identifiers and guide completion flag</li>
+    </ul>
+
+    <h2>What we do not collect</h2>
+    <ul>
+      <li>No account, email, or profile</li>
+      <li>No analytics, advertising, or crash-reporting SDKs</li>
+      <li>No cloud sync of ledger data</li>
+      <li>No camera, microphone, contacts, HealthKit, or location access</li>
+      <li>No banking credentials, payment cards, or money transfers</li>
+    </ul>
+
+    <h2>Encryption</h2>
+    <p>Ledger JSON is encrypted with AES-GCM before it is written under Application Support. The key never leaves the Keychain on this device. This encryption exists only to protect data at rest on your iPhone. Clearing the vault deletes ciphertext and the key.</p>
+
+    <h2>Network</h2>
+    <p>Core features work offline. The in-app privacy reader opens a local HTML copy bundled with Coinveil and does not browse the web. This page is the public App Store privacy policy URL.</p>
+
+    <h2>Children</h2>
+    <p>Coinveil is a general personal-finance utility. It is not directed at children under 13 and does not knowingly collect children's personal data online, because it does not collect online account data.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the effective date above will be updated. The same policy text is mirrored in the app bundle.</p>
+
+    <p class="meta">Coinveil Privacy Policy — https://qsrncnc.github.io/coinveil-privacy/</p>
+  </main>
+</body>
+</html>
